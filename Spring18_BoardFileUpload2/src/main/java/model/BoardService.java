@@ -11,6 +11,9 @@ public class BoardService {
 		this.boardDao = boardDao;
 	}
 	
+	
+	
+	
 	public void write(BoardVO bvo) throws SQLException{
 		System.out.println("Before No 확인 :: "+bvo.getNo()); //0
 		boardDao.write(bvo);//시퀀스가 증가됬고..그게 이미 vo에 박혔다.
